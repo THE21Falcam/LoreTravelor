@@ -1,0 +1,48 @@
+[gd_scene load_steps=5 format=4 uid="uid://bb4nbanfuuqmt"]
+
+[ext_resource type="Texture2D" uid="uid://1kke4lsicfv7" path="res://Assets/DungenTileSet.png" id="1_hsde2"]
+[ext_resource type="PackedScene" uid="uid://djg1ir4hcfdw2" path="res://Player/Player.tscn" id="2_qdf3k"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_qdf3k"]
+texture = ExtResource("1_hsde2")
+1:1/0 = 0
+1:1/0/custom_data_0 = true
+2:1/0 = 0
+2:1/0/custom_data_0 = true
+6:1/0 = 0
+6:1/0/custom_data_0 = true
+7:1/0 = 0
+7:1/0/custom_data_0 = true
+0:0/0 = 0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+1:0/0 = 0
+1:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+4:0/0 = 0
+4:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+4:4/0 = 0
+4:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+4:1/0 = 0
+4:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+3:4/0 = 0
+3:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+0:4/0 = 0
+0:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+0:3/0 = 0
+0:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+
+[sub_resource type="TileSet" id="TileSet_6c4u5"]
+physics_layer_0/collision_layer = 1
+custom_data_layer_0/name = "CanWalk"
+custom_data_layer_0/type = 1
+sources/0 = SubResource("TileSetAtlasSource_qdf3k")
+
+[node name="Stage404" type="TileMapLayer"]
+texture_filter = 1
+tile_map_data = PackedByteArray("AAAEAAEAAAACAAEAAAAEAAIAAAABAAEAAAAEAAMAAAADAAQAAAAFAAEAAAAEAAEAAAAFAAIAAAAEAAEAAAAFAAMAAAAEAAQAAAD6//7/AAAAAAMAAAD6////AAAAAAMAAAD6/wAAAAAAAAMAAAD6/wEAAAAAAAMAAAD6/wIAAAAAAAMAAAD6/wMAAAAAAAQAAAD7//7/AAACAAEAAAD7////AAABAAEAAAD7/wAAAAACAAEAAAD7/wEAAAABAAEAAAD7/wIAAAACAAEAAAD7/wMAAAADAAQAAAD8//7/AAABAAEAAAD8////AAACAAEAAAD8/wAAAAABAAEAAAD8/wEAAAACAAEAAAD8/wIAAAABAAEAAAD8/wMAAAADAAQAAAD9//7/AAACAAEAAAD9////AAABAAEAAAD9/wAAAAACAAEAAAD9/wEAAAABAAEAAAD9/wIAAAACAAEAAAD9/wMAAAADAAQAAAD+//7/AAABAAEAAAD+////AAACAAEAAAD+/wAAAAABAAEAAAD+/wEAAAACAAEAAAD+/wIAAAABAAEAAAD+/wMAAAADAAQAAAD///7/AAACAAEAAAD/////AAABAAEAAAD//wAAAAACAAEAAAD//wEAAAABAAEAAAD//wIAAAACAAEAAAD//wMAAAADAAQAAAAAAP7/AAABAAEAAAAAAP//AAACAAEAAAAAAAAAAAABAAEAAAAAAAEAAAACAAEAAAAAAAIAAAABAAEAAAAAAAMAAAADAAQAAAABAP7/AAACAAEAAAABAP//AAABAAEAAAABAAAAAAACAAEAAAABAAEAAAABAAEAAAABAAIAAAACAAEAAAABAAMAAAADAAQAAAACAP7/AAABAAEAAAACAP//AAACAAEAAAACAAAAAAABAAEAAAACAAEAAAACAAEAAAACAAIAAAABAAEAAAACAAMAAAADAAQAAAADAP7/AAACAAEAAAADAP//AAABAAEAAAADAAAAAAACAAEAAAADAAEAAAABAAEAAAADAAIAAAACAAEAAAADAAMAAAADAAQAAAAEAP7/AAABAAEAAAAEAP//AAACAAEAAAAEAAAAAAABAAEAAAAFAP7/AAAEAAEAAAAFAP//AAAEAAEAAAAFAAAAAAAEAAEAAAD6//z/AAAAAAAAAAD7//z/AAABAAAAAAD8//z/AAABAAAAAAD9//z/AAABAAAAAAD+//z/AAABAAAAAAD///z/AAABAAAAAAAAAPz/AAABAAAAAAABAPz/AAABAAAAAAACAPz/AAABAAAAAAADAPz/AAABAAAAAAAEAPz/AAABAAAAAAAFAPz/AAAEAAAAAAAFAP3/AAAEAAEAAAD6//3/AAAAAAMAAAD7//3/AAABAAEAAAD8//3/AAACAAEAAAD9//3/AAABAAEAAAD+//3/AAACAAEAAAD///3/AAABAAEAAAAAAP3/AAACAAEAAAABAP3/AAABAAEAAAACAP3/AAACAAEAAAADAP3/AAABAAEAAAAEAP3/AAACAAEAAAA=")
+tile_set = SubResource("TileSet_6c4u5")
+
+[node name="Player" parent="." instance=ExtResource("2_qdf3k")]
+position = Vector2(-24, -8)
+
+[node name="Player2" parent="." instance=ExtResource("2_qdf3k")]
+position = Vector2(40, 8)

@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://bcjv0qwu1e0sf"
+path="res://.godot/imported/bonus.wav-b3dcb837427e40da7d44776c985ae651.sample"
+
+[deps]
+
+source_file="res://Assets/Music Effects By OwlishMedia/bonus.wav"
+dest_files=["res://.godot/imported/bonus.wav-b3dcb837427e40da7d44776c985ae651.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

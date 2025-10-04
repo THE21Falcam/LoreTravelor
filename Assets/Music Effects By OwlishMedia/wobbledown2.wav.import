@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://dqow1su8wh32c"
+path="res://.godot/imported/wobbledown2.wav-e765ae2bb495809d2a2876d555ddef84.sample"
+
+[deps]
+
+source_file="res://Assets/Music Effects By OwlishMedia/wobbledown2.wav"
+dest_files=["res://.godot/imported/wobbledown2.wav-e765ae2bb495809d2a2876d555ddef84.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

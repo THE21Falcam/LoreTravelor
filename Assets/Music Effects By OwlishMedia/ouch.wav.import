@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://d03a4uhdcg4g3"
+path="res://.godot/imported/ouch.wav-dabe580c53f120706b4114c37c82b032.sample"
+
+[deps]
+
+source_file="res://Assets/Music Effects By OwlishMedia/ouch.wav"
+dest_files=["res://.godot/imported/ouch.wav-dabe580c53f120706b4114c37c82b032.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

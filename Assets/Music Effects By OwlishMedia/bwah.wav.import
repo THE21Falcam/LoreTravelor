@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://ddmagrvt3yr0d"
+path="res://.godot/imported/bwah.wav-fdd5d98389c323d5fe956ed1127a4a38.sample"
+
+[deps]
+
+source_file="res://Assets/Music Effects By OwlishMedia/bwah.wav"
+dest_files=["res://.godot/imported/bwah.wav-fdd5d98389c323d5fe956ed1127a4a38.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

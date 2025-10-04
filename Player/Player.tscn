@@ -1,0 +1,114 @@
+[gd_scene load_steps=11 format=3 uid="uid://djg1ir4hcfdw2"]
+
+[ext_resource type="Texture2D" uid="uid://i7iwwefbsp7t" path="res://Assets/dungeonSprites by analogstudios/mHero_.png" id="1_3qydi"]
+[ext_resource type="Script" uid="uid://r1taxysmbj6j" path="res://Player/Player.gd" id="1_q3lat"]
+[ext_resource type="FontFile" uid="uid://cm143gbehcb4m" path="res://Assets/m6x11.ttf" id="3_tok1r"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_tok1r"]
+size = Vector2(112, 112)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3qydi"]
+atlas = ExtResource("1_3qydi")
+region = Rect2(0, 0, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_q3lat"]
+atlas = ExtResource("1_3qydi")
+region = Rect2(24, 0, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tok1r"]
+atlas = ExtResource("1_3qydi")
+region = Rect2(48, 0, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ddoul"]
+atlas = ExtResource("1_3qydi")
+region = Rect2(72, 0, 24, 24)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_8g4oa"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3qydi")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_q3lat")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tok1r")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ddoul")
+}],
+"loop": true,
+"name": &"Idle",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3qydi"]
+size = Vector2(12, 12)
+
+[node name="Player" type="CharacterBody2D" groups=["Player21"]]
+script = ExtResource("1_q3lat")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+visible = false
+offset_left = -56.0
+offset_top = -56.0
+offset_right = 56.0
+offset_bottom = 56.0
+color = Color(0.277528, 0.277528, 0.277528, 0.278431)
+
+[node name="AttackArea" type="Area2D" parent="." groups=["AttackArea"]]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="AttackArea"]
+shape = SubResource("RectangleShape2D_tok1r")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
+position = Vector2(0, -4)
+sprite_frames = SubResource("SpriteFrames_8g4oa")
+animation = &"Idle"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_3qydi")
+
+[node name="BattleUI" type="Control" parent="."]
+visible = false
+texture_filter = 1
+layout_mode = 3
+anchors_preset = 0
+offset_left = -51.0
+offset_top = -20.0
+offset_right = -11.0
+offset_bottom = 20.0
+
+[node name="ColorRect" type="ColorRect" parent="BattleUI"]
+layout_mode = 0
+offset_left = -32.0
+offset_top = -10.0
+offset_right = 26.0
+offset_bottom = 50.0
+color = Color(0.644455, 0.887498, 0.574198, 1)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="BattleUI"]
+layout_mode = 0
+offset_left = -28.0
+offset_top = -17.0
+offset_right = 22.0
+offset_bottom = 57.0
+alignment = 1
+metadata/_edit_group_ = true
+
+[node name="Move" type="Button" parent="BattleUI/VBoxContainer"]
+layout_mode = 2
+focus_neighbor_bottom = NodePath("../Attack")
+theme_override_fonts/font = ExtResource("3_tok1r")
+theme_override_font_sizes/font_size = 16
+text = "Move
+"
+
+[node name="Attack" type="Button" parent="BattleUI/VBoxContainer"]
+layout_mode = 2
+focus_neighbor_top = NodePath("../Move")
+theme_override_fonts/font = ExtResource("3_tok1r")
+theme_override_font_sizes/font_size = 16
+text = "Attack"

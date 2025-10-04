@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://cr0duma3b5t5y"
+path="res://.godot/imported/plop.wav-ee803e23fa1b24cc65d3d54278a70de0.sample"
+
+[deps]
+
+source_file="res://Assets/Music Effects By OwlishMedia/plop.wav"
+dest_files=["res://.godot/imported/plop.wav-ee803e23fa1b24cc65d3d54278a70de0.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

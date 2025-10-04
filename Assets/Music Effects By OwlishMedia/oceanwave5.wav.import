@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://b7aoi8ibtaa3n"
+path="res://.godot/imported/oceanwave5.wav-16b4954db701df7bd809e7822d941d55.sample"
+
+[deps]
+
+source_file="res://Assets/Music Effects By OwlishMedia/oceanwave5.wav"
+dest_files=["res://.godot/imported/oceanwave5.wav-16b4954db701df7bd809e7822d941d55.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

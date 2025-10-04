@@ -1,0 +1,64 @@
+[gd_scene load_steps=3 format=3 uid="uid://djskjrvadx0mb"]
+
+[ext_resource type="Script" uid="uid://hpj4fy3kh7am" path="res://HUD/HUD.gd" id="1_b7ubu"]
+[ext_resource type="FontFile" uid="uid://cm143gbehcb4m" path="res://Assets/m6x11.ttf" id="1_f31rt"]
+
+[node name="HUD" type="Control"]
+texture_filter = 1
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_b7ubu")
+
+[node name="Cash" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -129.0
+offset_top = 8.0
+offset_right = -7.0
+offset_bottom = 36.0
+grow_horizontal = 0
+theme_override_fonts/font = ExtResource("1_f31rt")
+theme_override_font_sizes/font_size = 55
+text = "Cash $$$$$$"
+
+[node name="SoldierData" type="Control" parent="."]
+visible = false
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_top = -170.0
+offset_right = 395.0
+grow_vertical = 0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="SoldierData"]
+layout_mode = 0
+offset_left = 15.0
+offset_top = 11.0
+offset_right = 372.0
+offset_bottom = 166.0
+metadata/_edit_group_ = true
+
+[node name="Name" type="Label" parent="SoldierData/VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_f31rt")
+theme_override_font_sizes/font_size = 55
+text = "Name PlaceHolder"
+
+[node name="HP" type="Label" parent="SoldierData/VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_f31rt")
+theme_override_font_sizes/font_size = 55
+text = "HP 20"
+
+[node name="SP" type="Label" parent="SoldierData/VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_f31rt")
+theme_override_font_sizes/font_size = 55
+text = "SP 20"

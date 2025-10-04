@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://dlf7h3x67v1xd"
+path="res://.godot/imported/spring1.wav-2b8dc98fd78463be5d6e59de66dc17b7.sample"
+
+[deps]
+
+source_file="res://Assets/Music Effects By OwlishMedia/spring1.wav"
+dest_files=["res://.godot/imported/spring1.wav-2b8dc98fd78463be5d6e59de66dc17b7.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

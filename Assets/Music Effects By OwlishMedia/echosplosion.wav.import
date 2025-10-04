@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://5mglv4372m0s"
+path="res://.godot/imported/echosplosion.wav-2c4912a83c001ed6a269f6e31727902c.sample"
+
+[deps]
+
+source_file="res://Assets/Music Effects By OwlishMedia/echosplosion.wav"
+dest_files=["res://.godot/imported/echosplosion.wav-2c4912a83c001ed6a269f6e31727902c.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

@@ -1,0 +1,32 @@
+[gd_scene load_steps=5 format=3 uid="uid://ggcpguhg7tpf"]
+
+[ext_resource type="Script" uid="uid://pav2mvflmxky" path="res://Marker/Marker.gd" id="1_hv53o"]
+[ext_resource type="Texture2D" uid="uid://mygaitd6smf4" path="res://Assets/Marker.png" id="2_hea5r"]
+
+[sub_resource type="RectangleShape2D" id="1"]
+size = Vector2(16, 16)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_tv3mh"]
+size = Vector2(14, 14)
+
+[node name="Marker" type="CharacterBody2D" node_paths=PackedStringArray("ray")]
+script = ExtResource("1_hv53o")
+ray = NodePath("RayCast2D")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("1")
+
+[node name="RayCast2D" type="RayCast2D" parent="."]
+target_position = Vector2(0, 16)
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_tv3mh")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+texture = ExtResource("2_hea5r")
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
+[connection signal="body_exited" from="Area2D" to="." method="_on_area_2d_body_exited"]
